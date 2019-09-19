@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Slick</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="header_top_line">
+        <nav class="top_navigation">
+            <ul>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Каталог</a></li>
+                <li><a href="#">Доставка</a></li>
+                <li><a href="#">Наши магазины</a></li>
+                <li><a href="#">Оптовикам</a></li>
+                <li><a href="#"> Контакты</a></li>
+            </ul>
+        </nav>
+
+        <div class="search">
+            <form>
+                <input type="text" placeholder="Поиск по каталогу">
+                <button type="submit"></button>
+            </form>
+        </div>
+    </div>
+    <div class="header_container">
+        <a href="#"><img src="images/logo.png" alt=""></a>
+        <div class="contact">
+            <div class="contact_phone">
+                <a href="tel:+4952342233">(495) <span>234-22-33</span></a>
+                <a href="tel:+4952342233">(495) <span>234-22-33</span></a>
+            </div>
+            <div class="contact_message">
+                <a href="mailto:ask@elwau?subject=Письмо от клиента">Написать сообщение</a>
+            </div>
+            <div class="contact_icq">
+                <a href="#">288-22-08</a>
+            </div>
+        </div>
+        <div class="personal_info">
+            <div class="cart">
+                <a href="#">В вашей корзине пусто</a>
+            </div>
+            <div class="padlock">
+                <a href="#">Личный кабинет</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section class="body_site">
+        <nav class="menu">
+            <div class="menu_list">
+                <div class="auto_wrapper">
+                    <a class="auto" onclick="down('auto')">Автомодели</a>
+                    <ul id="auto" style="display:none">
+                        <li>Для начинающих (Соосные)</li>
+                        <li>С электродвигателем</li>
+                        <li>Вертолеты с ДВС</li>
+                        <li>Вертолеты Mikado</li>
+                    </ul>
+                </div>
+
+                <div class="helicopters_wrapper">
+                    <a class="helicopters" onclick="down('helicopters')">Вертолеты</a>
+                    <ul id="helicopters" style="display:none">
+                        <li>Для начинающих (Соосные)</li>
+                        <li>С электродвигателем</li>
+                        <li>Вертолеты с ДВС</li>
+                        <li>Вертолеты Mikado</li>
+                    </ul>
+                </div>
+
+                <div class="batteries_wrapper">
+                    <a class="batteries" onclick="down('batteries')">Аккумуляторы, кабели</a>
+                    <ul id="batteries" style="display:none">
+                        <li>Для начинающих (Соосные)</li>
+                        <li>С электродвигателем</li>
+                        <li>Вертолеты с ДВС</li>
+                        <li>Вертолеты Mikado</li>
+                    </ul>
+                </div>
+
+                <div class="equipment_wrapper">
+                    <a class="equipment" onclick="down('equipment')">Аппаратура</a>
+                    <ul id="equipment" style="display:none">
+                        <li>Для начинающих (Соосные)</li>
+                        <li>С электродвигателем</li>
+                        <li>Вертолеты с ДВС</li>
+                        <li>Вертолеты Mikado</li>
+                    </ul>
+                </div>
+
+                <div class="tools_wrapper">
+                    <a class="tools" onclick="down('tools')">Инструмент, материалы</a>
+                    <ul id="tools" style="display:none">
+                        <li>Для начинающих (Соосные)</li>
+                        <li>С электродвигателем</li>
+                        <li>Вертолеты с ДВС</li>
+                        <li>Вертолеты Mikado</li>
+                    </ul>
+                </div>
+
+                <div class="details_wrapper">
+                    <a class="details" onclick="down('details')">Винты, крепеж, клей</a>
+                    <ul id="details" style="display:none">
+                        <li>Для начинающих (Соосные)</li>
+                        <li>С электродвигателем</li>
+                        <li>Вертолеты с ДВС</li>
+                        <li>Вертолеты Mikado</li>
+                    </ul>
+                </div>
+
+                <div class="engines_DVC_wrapper">
+                    <a class="engines_DVC" onclick="down('engines_DVC')">Двигатели ДВС</a>
+                    <ul id="engines_DVC" style="display:none">
+                        <li>Для начинающих (Соосные)</li>
+                        <li>С электродвигателем</li>
+                        <li>Вертолеты с ДВС</li>
+                        <li>Вертолеты Mikado</li>
+                    </ul>
+                </div>
+
+                <div class="Electric_motors_wrapper">
+                    <a class="Electric_motors" onclick="down('Electric_motors')">Электродвигатели</a>
+                    <ul id="Electric_motors" style="display:none">
+                        <li>Для начинающих (Соосные)</li>
+                        <li>С электродвигателем</li>
+                        <li>Вертолеты с ДВС</li>
+                        <li>Вертолеты Mikado</li>
+                    </ul>
+                </div>
+
+                <div class="boats_wrapper">
+                    <a class="boats" onclick="down('boats')">Катера, яхты</a>
+                    <ul id="boats" style="display:none">
+                        <li>Для начинающих (Соосные)</li>
+                        <li>С электродвигателем</li>
+                        <li>Вертолеты с ДВС</li>
+                        <li>Вертолеты Mikado</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="news_menu">
+                <div class="first_news">
+                    <div>12.10.2011</div>
+                    <div>Много скидок!</div>
+                    <div>Скоро ноябрь, а это значит, что<br>
+                        скоро вас ждет большое количе-<br>
+                        ство скидок в связи с нашим<br>
+                        юбелеем.
+                    </div>
+                </div>
+                <div class="second_news">
+                    <div>12.10.2011</div>
+                    <div>Обменяй старое на новое!</div>
+                    <div>Скоро ноябрь, а это значит, что<br>
+                        скоро вас ждет большое количе-<br>
+                        ство скидок в связи с нашим<br>
+                        юбелеем.
+                    </div>
+                </div>
+                <div class="third_news">
+                    <div>12.10.2011</div>
+                    <div>Обновление в каталогах!</div>
+                    <div>Скоро ноябрь, а это значит, что<br>
+                        скоро вас ждет большое количе-<br>
+                        ство скидок в связи с нашим<br>
+                        юбелеем.
+                    </div>
+                </div>
+            </div>
+            <div class="sub_butn">
+                <img class="pencil" src="images/pencil.png" alt="">
+                <input type="submit" class="subscribe_button" value="Написать нам">
+            </div>
+            <div class="figure"></div>
+            <div class="figure"></div>
+        </nav>
+        <div class="sl">
+            <div class="sl_slide">
+                <div class="sl_text">
+                    <div class="sl_zag">Электрический мини-вертолет Beacon</div>
+                    <div class="tabs">
+                        <div class="tabs_content_text">
+                            <table>
+                                <tbody>
+                                <tr>
+                                    <td>Тип:</td>
+                                    <td>мини вертолет</td>
+                                </tr>
+                                <tr>
+                                    <td>Шасси:</td>
+                                    <td>пластик</td>
+                                </tr>
+                                <tr>
+                                    <td>Электродвигатели:&ensp;</td>
+                                    <td>180 размера (2 шт.)</td>
+                                </tr>
+                                <tr>
+                                    <td>Время полета:</td>
+                                    <td>10 - 12 минут</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="purchase">
+                            <div class="sl_desc">Цена: 6 960 рублей</div>
+                            <div class="basket_butn">
+                                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                                <input type="submit" class="card_basket" value="В КОРЗИНУ">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img src="images/helicopter_slider.png" alt="Pictures of slide 1" class="sl_img">
+            </div>
+            <div class="sl_slide">
+                <div class="sl_text">
+                    <p class="sl_zag">Электрический мини-вертолет Beacon</p>
+                    <div class="tabs">
+                        <div class="tabs_content_text">
+                            <table>
+                                <tbody>
+                                <tr>
+                                    <td>Тип:</td>
+                                    <td>мини вертолет</td>
+                                </tr>
+                                <tr>
+                                    <td>Шасси:</td>
+                                    <td>пластик</td>
+                                </tr>
+                                <tr>
+                                    <td>Электродвигатели:&ensp;</td>
+                                    <td>180 размера (2 шт.)</td>
+                                </tr>
+                                <tr>
+                                    <td>Время полета:</td>
+                                    <td>10 - 12 минут</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="purchase">
+                            <div class="sl_desc">Цена: 6 960 рублей</div>
+                            <div class="basket_butn">
+                                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                                <input type="submit" class="card_basket" value="В КОРЗИНУ">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img src="images/helicopter_slider.png" alt="Pictures of slide 1" class="sl_img">
+            </div>
+        </div>
+
+        <h3 class="sell-title">Распродажа</h3>
+        <div class="sell-out">
+            <div class="toy_car">
+                <div class="toy_prise">18 480 р.</div>
+                <div class="toy_desc"><a href="#">CYCLONE D4 WORLD<br> CHAMPIONSHIP EDITION KIT</a></div>
+            </div>
+            <div class="toy_airplane">
+                <div class="toy_prise">5 712 р.</div>
+                <div class="toy_desc"><a href="#">Кордовая модель-копия<br> PT-19 Profile Control Line 36<br> ARF</a>
+                </div>
+            </div>
+            <div class="toy_helicopter">
+                <div class="toy_prise">18 240 р.</div>
+                <div class="toy_desc"><a href="#">Электрический<br> мини-вертолет HM 60#B</a></div>
+            </div>
+        </div>
+
+        <h3 class="sell-title">Хиты продаж</h3>
+        <div class="bestsellers_top_line">
+            <div class="toy_car">
+                <div class="toy_prise">18 480 р.</div>
+                <div class="toy_desc"><a href="#">CYCLONE D4 WORLD<br> CHAMPIONSHIP EDITION KIT</a></div>
+            </div>
+            <div class="toy_helicopter">
+                <div class="toy_prise">18 240 р.</div>
+                <div class="toy_desc"><a href="#">Электрический<br> мини-вертолет HM 60#B</a></div>
+            </div>
+            <div class="toy_airplane">
+                <div class="toy_prise">5 712 р.</div>
+                <div class="toy_desc"><a href="#">Кордовая модель-копия<br> PT-19 Profile Control Line 36<br> ARF</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="bestsellers_bottom_line">
+            <div class="toy_helicopter">
+                <div class="toy_prise">18 240 р.</div>
+                <div class="toy_desc"><a href="#">Электрический<br> мини-вертолет HM 60#B</a></div>
+            </div>
+            <div class="toy_airplane">
+                <div class="toy_prise">5 712 р.</div>
+                <div class="toy_desc"><a href="#">Кордовая модель-копия<br> PT-19 Profile Control Line 36<br> ARF</a>
+                </div>
+            </div>
+            <div class="toy_car">
+                <div class="toy_prise">18 480 р.</div>
+                <div class="toy_desc"><a href="#">CYCLONE D4 WORLD<br> CHAMPIONSHIP EDITION KIT</a></div>
+            </div>
+        </div>
+
+        <h2 class="last_seen">Последние обзоры</h2>
+        <div class="recent_reviews_top_line">
+            <div class="toy_helicopter_2">
+                <div><a href="#">Наша компания организовала тест на прочность и выносливость<br>
+                    эктрическому мини-вертолету HM60#B</a></div>
+                <p>Было приглашено около 30 человек, но зрителей собралось в разы
+                    больше. Место проведения теста - площадь.
+                    Зрители смотрели как на шоу, маневры и падения вертолета сопрово ждались
+                    возгласами, вот вот и ходила бы волна по зрителям.</p>
+            </div>
+            <img class="dividing_line" src="images/dividing_line.png" alt="">
+        </div>
+
+        <div class="recent_reviews_bottom_line">
+            <div class="toy_helicopter_2">
+                <div><a href="#">Наша компания организовала тест на прочность и выносливость<br>
+                    эктрическому мини-вертолету HM60#B</a></div>
+                <p>Было приглашено около 30 человек, но зрителей собралось в разы
+                    больше. Место проведения теста - площадь.
+                    Зрители смотрели как на шоу, маневры и падения вертолета сопрово ждались
+                    возгласами, вот вот и ходила бы волна по зрителям.</p>
+            </div>
+        </div>
+
+        <div class="about_desc">
+            <h2 class="about_title">О компании</h2>
+            <p>История компании elwau.ru – один из примеров сочетания творческого подхода с чрезвычайной практично
+                стью. Знаменитая идея братьев Венинг – оснастить различные виды транспорта мобильными холодильни
+                ками – в 70-х годах прошлого века перешагнула стандарты инженерного мышления.
+                Что же до применения этой и множества других разработок – автохолодильники автокондиционеры, автопы
+                лесосы, автокофеварки elwau.ru – то здесь братья-изобретатели блестяще продемонстрировали свои
+                органи заторские таланты.&emsp;<a href="#">читать дальше</a>
+            </p>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <nav class="footer_nav">
+        <ul>
+            <li><a href="#">О компании</a></li>
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Наши магазины</a></li>
+            <li><a href="#">Оптовикам</a></li>
+            <li><a href="#"> Контакты</a></li>
+        </ul>
+    </nav>
+
+    <address class="footer_address">
+        © 2007-2011 Интернет-супермаркет <a href="#">«Elwau.ru»</a><br>
+        Адрес: 105118, г.Москва, ул. Кирпичная, д. 22<br>
+        Тел.: +7 (495) 540-55-11, 8 (800) 555-55-90<br>
+        Email: info@elwau.ru
+    </address>
+
+    <div class="visitor_counters">
+        <div class="visitor_counter_1"></div>
+        <div class="visitor_counter_2"></div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="slick/slick.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
